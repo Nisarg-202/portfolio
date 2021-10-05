@@ -1,0 +1,799 @@
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: grey;
+}
+
+body {
+    background-color: #0a192f;
+}
+
+#handlebar-style {
+    color: #64ffda;
+}
+
+#square {
+    height: 100px;
+    width: 100px;
+    border: none;
+    animation-name: square;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    transform: rotate(-45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes square {
+    0% {
+        border-left: 2px solid #64ffda;
+    }
+
+    25% {
+        border-left: 2px solid #64ffda;
+        border-bottom: 2px solid #64ffda;
+    }
+
+    50% {
+        border-left: 2px solid #64ffda;
+        border-bottom: 2px solid #64ffda;
+        border-right: 2px solid #64ffda;
+    }
+
+    100% {
+        border-left: 2px solid #64ffda;
+        border-bottom: 2px solid #64ffda;
+        border-right: 2px solid #64ffda;
+        border-top: 2px solid #64ffda;
+    }
+}
+
+#logo-text {
+    font-size: 30px;
+    /* color: grey; */
+    color: #64ffda;
+    animation-name: logo-text;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    transform: rotate(45deg);
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes logo-text {
+    from {
+        opacity: 0.2;
+        visibility: visible;
+    }
+
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+#outer-square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#outer-square-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-text-navbar {
+    font-size: 25px;
+    /* color: grey; */
+    color: #64ffda;
+    animation-name: logo-text;
+    animation-duration: 1s;
+    transform: rotate(45deg);
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+#square-navbar {
+    height: 50px;
+    width: 50px;
+    border: none;
+    animation-name: square;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    transform: rotate(-45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-link1 {
+    color: #ccd6f6;
+    animation-name: nav-link1;
+    animation-duration: .2s;
+    animation-delay: .5s;
+    margin-bottom: 10px;
+    position: relative;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#nav-link2 {
+    color: #ccd6f6;
+    animation-name: nav-link1;
+    animation-duration: .2s;
+    animation-delay: .7s;
+    margin-bottom: 10px;
+    position: relative;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#nav-link4 {
+    color: #ccd6f6;
+    animation-name: nav-link1;
+    animation-duration: .2s;
+    animation-delay: 1.1s;
+    margin-bottom: 10px;
+    position: relative;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#nav-link5 {
+    color: #ccd6f6;
+    animation-name: nav-link1;
+    animation-duration: .2s;
+    animation-delay: 1.3s;
+    margin-bottom: 10px;
+    position: relative;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#nav-link6 {
+    color: #ccd6f6;
+    animation-name: nav-link1;
+    animation-duration: .2s;
+    animation-delay: 1.5s;
+    margin-bottom: 10px;
+    position: relative;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes nav-link1 {
+    from {
+        visibility: visible;
+        margin-bottom: 10px;
+    }
+
+    to {
+        margin-top: 10px;
+        visibility: visible;
+    }
+}
+
+span.Number {
+    /* color: pink; */
+    color: #64ffda;
+}
+
+.nav-item {
+    transition: .5s;
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+}
+
+#outer-work {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    /* height: 100vh; */
+}
+
+#second-inner {
+    display: flex;
+    flex-direction: column;
+    width: 20px;
+}
+
+#email p {
+    transform: rotate(90deg);
+    position: fixed;
+    right: 0px;
+    bottom: 200px;
+    color: grey;
+    animation-name: email;
+    animation-duration: 0.3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+#email p:hover {
+    cursor: pointer;
+}
+
+@keyframes email {
+    from {
+        opacity: 0.1;
+        visibility: visible;
+    }
+
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+#email-line p {
+    transform: rotate(90deg);
+    position: fixed;
+    right: 61px;
+    bottom: 20px;
+    width: 100px;
+    color: grey;
+}
+
+#social-buttons-icon {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 200px;
+}
+
+/* #social-buttons {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+} */
+
+#social-buttons-line p {
+    position: fixed;
+    bottom: 20px;
+    width: 300px;
+    color: grey;
+    transform: rotate(90deg);
+    left: -100px;
+}
+
+i {
+    transition: .3s;
+    margin: 15px 0px;
+    font-size: 100px;
+}
+
+i:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@keyframes social-icons {
+    from {
+        visibility: visible;
+        margin-bottom: 20px;
+    }
+
+    to {
+        visibility: visible;
+        margin-top: 10px;
+    }
+}
+
+#name-title {
+    /* color: grey; */
+    color: #64ffda;
+    font-size: 20px;
+    animation-name: name;
+    animation-duration: .5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+#description {
+    /* color: grey; */
+    color: #8892b0;
+    font-size: 20px;
+    width: 600px;
+    animation-name: name;
+    animation-duration: .5s;
+    animation-delay: 2.4s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+#description-contact {
+    /* color: grey; */
+    color: #8892b0;
+    font-size: 20px;
+}
+
+#contact-description {
+    width: 600px;
+    margin: 0 auto;
+}
+
+#name {
+    color: #ccd6f6;
+    font-size: 70px;
+    animation-name: name;
+    animation-duration: .5s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes name {
+    from {
+        visibility: visible;
+        opacity: 0.1;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+#subtitle {
+    /* color: pink; */
+    color: #8892b0;
+    font-size: 60px;
+    animation-name: name;
+    animation-duration: .5s;
+    animation-delay: 1.9s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+#subtitle-contact {
+    /* color: pink; */
+    color: #ccd6f6;
+    font-size: 60px;
+}
+
+/* span.mark-title {
+    color: grey;
+} */
+
+#container {
+    text-align: center;
+}
+
+#contactButton {
+    /* border: 1px solid grey; */
+    border: 1px solid #64ffda;
+    /* color: pink; */
+    color: #64ffda;
+    animation-name: name;
+    animation-duration: .5s;
+    animation-delay: 2.7s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+#contactButton-contact {
+    border: 1px solid #64ffda;
+    color: #64ffda;
+}
+
+#contactButton-contact:hover {
+    background-color: grey;
+}
+
+#contactButton:hover {
+    background-color: grey;
+}
+
+.title-style {
+    font-size: 30px;
+    /* color: grey; */
+    color: #ccd6f6;
+}
+
+.subtitle-style {
+    font-size: 25px;
+    color: pink;
+}
+
+.order-number {
+    font-size: 25px;
+}
+
+.aboutMe {
+    margin-top: 100px;
+    animation-name: aboutMe-animation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.contactUs {
+    margin-top: 100px;
+    animation-name: aboutMe-animation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.card {
+    background-color: #112240;
+}
+
+#contactUs {
+    visibility: hidden;
+}
+
+#footer-social {
+    visibility: hidden;
+}
+
+.footer-social {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 300px;
+    animation-name: aboutMe-animation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aboutMe-animation {
+    from {
+        opacity: 0.1;
+        visibility: visible;
+    }
+
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+#about-me-text {
+    font-size: 20px;
+    /* color: grey; */
+    color: #8892b0;
+    margin-top: 60px;
+}
+
+#image {
+    margin-left: 100px;
+    transition: .2s;
+}
+
+#image:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.Technology {
+    margin-top: 100px;
+    animation-name: aboutMe-animation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+#Technology {
+    visibility: hidden;
+}
+
+.Work {
+    margin-top: 100px;
+    animation-name: Work;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+#Work {
+    visibility: hidden;
+}
+
+@keyframes Work {
+    from {
+        transform: scale(.8);
+        visibility: visible;
+    }
+
+    to {
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+
+#unordered-list {
+    margin-left: 20px;
+}
+
+.technology-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#aboutMe {
+    visibility: hidden;
+}
+
+@keyframes work-1 {
+    from {
+        transform: scale(0.8);
+        visibility: visible;
+    }
+
+    to {
+        visibility: visible;
+        transform: scale(1);
+    }
+}
+
+#work-2 {
+    margin-top: 150px;
+}
+
+.project-image {
+    height: 400px;
+    width: 600px;
+}
+
+.project-image:hover {
+    cursor: pointer;
+}
+
+#project-1-title {
+    right: 50px;
+    position: relative;
+    top: 20px;
+    /* color: grey; */
+    color: #a8b2d1;
+    background-color: #112240;
+}
+
+.project-title-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: grey;
+    right: 50px;
+    position: relative;
+}
+
+#project-title-1-top {
+    font-size: 15px;
+    color: #64ffda;
+}
+
+#project-title-1-middle {
+    font-size: 25px;
+    color: #ccd6f6;
+}
+
+
+#project-2-title {
+    left: 100px;
+    position: relative;
+    top: 20px;
+    /* color: grey; */
+    color: #a8b2d1;
+    background-color: #112240;
+}
+
+.project-title-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: grey;
+    left: 100px;
+    position: relative;
+}
+
+#project-title-2-top {
+    font-size: 15px;
+    color: #64ffda;
+}
+
+#project-title-2-middle {
+    font-size: 25px;
+    color: #ccd6f6;
+}
+
+#otherProjects {
+    margin-top: 100px;
+    visibility: hidden;
+}
+
+.otherProjects {
+    animation-name: otherProjects-animation;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes otherProjects-animation {
+    from {
+        visibility: visible;
+        transform: scale(.7);
+    }
+
+    to {
+        visibility: visible;
+        transform: scale(1);
+    }
+}
+
+.project-icons {
+    /* color: pink; */
+    color: #64ffda;
+}
+
+.project-folder-title {
+    font-size: 20px;
+    /* color: grey; */
+    color: #ccd6f6;
+}
+
+.project-folder-subtitle {
+    /* color: grey; */
+    color: #a8b2d1;
+}
+
+.folder-box {
+    transition: .2s;
+}
+
+.folder-box:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.language-used {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    right: 50px;
+    position: relative;
+    /* color: grey; */
+    color: #a8b2d1;
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+.language-used-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    left: 100px;
+    position: relative;
+    /* color: grey; */
+    color: #a8b2d1;
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+.language-style {
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+.language-style-1 {
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+@media (max-width: 767px) {
+
+    .language-used {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: static;
+    }
+
+    .language-used-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: static;
+    }
+
+    .language-style-1 {
+        margin-bottom: 25px;
+    }
+
+    #project-2-title {
+        position: static;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    #project-1-title {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        position: static;
+    }
+
+    .project-title-1 {
+        flex-direction: row;
+        display: flex;
+        justify-content: flex-start;
+        position: static;
+    }
+
+    .project-title-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: static;
+    }
+
+    .folder-box:hover {
+        transform: scale(.9);
+    }
+
+    .project-image {
+        width: 310px;
+        height: 200px;
+    }
+
+    #social-buttons {
+        display: none;
+    }
+
+    #second-inner {
+        display: none;
+    }
+
+    #name {
+        font-size: 50px;
+    }
+
+    #subtitle {
+        font-size: 40px;
+    }
+
+    #description {
+        width: auto;
+    }
+
+    #image {
+        margin-left: 0px;
+    }
+
+    .technology-icons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about-me-text {
+        margin-bottom: 40px;
+    }
+
+    #contact-description {
+        width: auto;
+    }
+
+    #work-2 {
+        margin-top: 50px;
+    }
+}
